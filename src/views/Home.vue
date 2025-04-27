@@ -58,11 +58,11 @@ import Tip from "../components/Tip.vue";
 			</ul>
 		</li>
 	</ul>
-	<p>
+	<Tip>
 		Send your Minecraft usernames (<strong>case sensitive</strong>) in the
 		<a href="https://discord.com/channels/988739710518169620/1362842884218425505">Discord thread</a> so I can
 		whitelist you!
-	</p>
+	</Tip>
 	<h2>Notes</h2>
 	<p>(helpful to those who want to set up their own Minecraft servers in the future)</p>
 	<ul>

@@ -1,7 +1,9 @@
 <template>
 	<div class="tip">
 		<span class="tip-label"><icon icon="info-circle" />Tip</span>
-		<slot></slot>
+		<span class="tip-content">
+			<slot></slot>
+		</span>
 	</div>
 </template>
 
