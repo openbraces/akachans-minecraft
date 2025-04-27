@@ -37,6 +37,7 @@
 	// Lengths
 	--border-radius: 0.15rem;
 
+	display: grid;
 	font-family: var(--sans-serif);
 	background-color: rgb(var(--background));
 	color: rgb(var(--text));
@@ -50,14 +51,13 @@
 
 body {
 	display: grid;
-	margin: unset;
+	margin: auto;
+	padding: 1rem;
+	max-width: 80ch;
 }
 
 main {
 	display: grid;
-	margin: auto;
-	padding: 1rem;
-	max-width: 80ch;
 }
 
 input[type="button"],
@@ -74,6 +74,7 @@ button {
 	padding: 0.25rem 0.5rem;
 	outline: unset;
 	font-family: inherit;
+	color: rgb(var(--background));
 
 	&:active {
 		background-image: linear-gradient(

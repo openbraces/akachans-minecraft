@@ -10,6 +10,7 @@
 <style scoped lang="scss">
 .tip {
 	display: flex;
+	align-items: center;
 	gap: 0.5rem;
 	border: 1px solid rgb(var(--text));
 	border-radius: var(--border-radius);
@@ -23,7 +24,6 @@
 	display: inline-flex;
 	gap: 0.25rem;
 	align-items: center;
-	float: left;
 	border-radius: var(--border-radius);
 	background-color: rgb(var(--primary));
 	color: rgb(var(--background));
