@@ -1,0 +1,105 @@
+@font-face {
+	font-family: "ITC Franklin Gothic Std";
+	src: url(assets/fonts/ITCFranklinGothicStd-Book.otf);
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "ITC Franklin Gothic Std";
+	src: url(assets/fonts/ITCFranklinGothicStd-BookIt.otf);
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Fragment Mono";
+	src: url(assets/fonts/FragmentMono-Regular.ttf);
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Fragment Mono";
+	src: url(assets/fonts/FragmentMono-Italic.ttf);
+	font-style: italic;
+}
+
+:root {
+	// Colors
+	--text: 240, 223, 232;
+	--background: 25, 12, 18;
+	--primary: 206, 152, 181;
+	--secondary: 51, 109, 77;
+	--accent: 99, 134, 181;
+
+	// Fonts
+	--sans-serif: "ITC Franklin Gothic Std", Helvetica, Arial, sans-serif;
+	--monospace: "Fragment Mono", "Courier New", Courier, monospace;
+
+	// Lengths
+	--border-radius: 0.15rem;
+
+	font-family: var(--sans-serif);
+	background-color: rgb(var(--background));
+	color: rgb(var(--text));
+	text-underline-offset: 0.15rem;
+}
+
+::selection {
+	color: rgb(var(--background));
+	background-color: rgb(var(--primary));
+}
+
+body {
+	display: grid;
+	margin: unset;
+}
+
+main {
+	display: grid;
+	margin: auto;
+	padding: 1rem;
+	max-width: 80ch;
+}
+
+input[type="button"],
+button {
+	display: inline-flex;
+	align-items: center;
+	border-radius: var(--border-radius);
+	border: 1px solid color-mix(in srgb, rgb(var(--primary)) 75%, rgb(var(--text)) 25%);
+	box-shadow: rgb(var(--text)) 0 1px 0 0 inset;
+	background-image: linear-gradient(
+		rgb(var(--primary)),
+		color-mix(in srgb, rgb(var(--primary)) 75%, rgb(var(--background)) 25%)
+	);
+	padding: 0.25rem 0.5rem;
+	outline: unset;
+	font-family: inherit;
+
+	&:active {
+		background-image: linear-gradient(
+			color-mix(in srgb, rgb(var(--primary)) 75%, rgb(var(--background)) 25%),
+			rgb(var(--primary))
+		);
+	}
+}
+
+a {
+	color: rgb(var(--text));
+
+	&:hover,
+	&:active {
+		color: rgb(var(--background));
+		background-color: rgb(var(--primary));
+		text-decoration: unset;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: unset;
+	font-weight: normal;
+}
